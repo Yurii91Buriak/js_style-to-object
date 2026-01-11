@@ -15,7 +15,7 @@ function convertToObject(sourceString) {
 
       return { [key]: value };
     })
-    .reduce((acc, obj) => Object.assign(acc, obj), {});
+    .reduce((acc, styleObject) => Object.assign(acc, styleObject), {});
 }
 
 module.exports = convertToObject;
